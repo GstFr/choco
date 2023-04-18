@@ -1,7 +1,7 @@
 
 import { usestate } from 'react' 
 
-const ItenCount = ({stock, initial, onAdd})=> {
+const ItemCount = ({stock, initial, onAdd})=> {
 const [quantity, setQuantity] = usestate (initial)
 
 const increment = () => {

@@ -3,34 +3,34 @@ const products = [
     {
         id: '1',
 
-        name: 'Negro con almendras',
+        name: 'Orquideas',
         price: 1000,
-        img: '/asset/ImgFacial/3.jpg',
+        img: '/assets/orquideas.jpg',
         stock: 19,
-        category: 'tableta',
-        description: 'Cocolate negro, 80% cacao, semi amargo con almendras, 120gr'
+        category: 'exoticas',
+        description: 'orquideas'
 
     },
     {
         id: '2',
 
-        name: 'Blanco con leche',
+        name: 'Gladiolos',
         price: 1000,
-        img: '/asset/ImgFacial/11.jpg',
+        img: '/assets/gladiolos.jpg',
         stock: 15,
-        category: 'tableta',
-        description: 'Chocolate blanco con leche, 120gr'
+        category: 'exoticas',
+        description: 'Gladiolos'
 
     },
     {
         id: '3',
 
-        name: 'Bombones',
+        name: 'Hortensias',
         price: 1500,
-        img: '/asset/ImgFacial/28.jpg',
+        img: '/assets/hortensias.jpg',
         stock: 10,
-        category: 'bombones',
-        description: 'Mix de bombones artesanales, 200gr'
+        category: 'jardin',
+        description: 'Hortensias'
 
     },
     
