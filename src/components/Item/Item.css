@@ -1,0 +1,31 @@
+.card{
+
+margin: 5px;
+padding: 5px;
+
+
+
+}
+.imgItem {
+    
+    max-height: 300px;
+}
+
+.Option {
+    justify-content: center;
+
+}
+
+.botonItem {
+    width: 85px;
+    height: 24px;
+    background: #440e90;
+    border-radius: 5px;
+}
+
+.optionItem {
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: rgb(2, 2, 2);
+}
