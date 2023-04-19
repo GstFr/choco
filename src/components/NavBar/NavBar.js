@@ -1,6 +1,7 @@
 import CartWidget from "../CartWidget/CartWidget"
 import { NavLink, Link } from "react-router-dom"
 import "./NavBar.css"
+import Logo from '../../Logo.png'
 
 
 const NavBar = () => {
@@ -9,7 +10,7 @@ const NavBar = () => {
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid containerNavBar">
       
-        
+      <img src ={Logo} alt = 'logo' className='logo'/>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
