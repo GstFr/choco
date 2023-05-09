@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cartCaja {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.cartTotal {
+    height: 50px;
+    width: 200px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+
+.buttonLimpiar {
+    height: 45px;
+}
+
+.buttonChecout {
+    height: 45px;
+}
+
+.chekoutLink {
+    text-decoration: none;
+}
+
+.SinItems h1 {
+    padding: 40px;
+    font-size: 30px;
+}
