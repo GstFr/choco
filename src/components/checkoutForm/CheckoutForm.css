@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.buttonCrearOrden {
+    width: 100%;
+    padding-top: 20p;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.ContainerFormCheckout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Input {
+   
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.InputEmail {
+    text-transform: lowercase;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.FormCheckout {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    background: rgb(15, 150, 56);
+    background: linear-gradient(90deg, rgb(3, 75, 10) 18%, rgba(1, 35, 27, 0.348) 96%);padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 6px;
+    
+}
+
+.Label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}

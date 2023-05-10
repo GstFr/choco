@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.checkoutText h1 {
+    width: 500px;
+    height: 50px;
+    margin: auto;
+    border-radius: 6px;
+    background: rgb(15, 150, 56);
+    background: linear-gradient(90deg, rgb(3, 75, 10) 18%, rgba(1, 35, 27, 0.348) 96%);
+    margin-top: 30px;
+
+    font-size: 40px;
+}
