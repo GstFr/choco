@@ -1,0 +1,36 @@
+.itemCarrito {
+    font-variant: small-caps;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 0px;
+    height: 30px;
+}
+
+
+
+.itemCarrito:nth-child(even) {
+    background-color: rgb(51, 122, 56);
+    background: linear-gradient(90deg, rgb(10, 88, 41) 0%, rgb(27, 119, 84) 22%, rgb(14, 46, 50) 100%);
+    ;
+}
+
+.itemCarrito:nth-child(odd) {
+    background-color: rgb(22, 70, 65);
+    
+}
+
+.itemCarrito p {
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.botonEliminar {
+    width: 10px;
+    height: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

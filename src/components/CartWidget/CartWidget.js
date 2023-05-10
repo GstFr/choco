@@ -1,4 +1,4 @@
-import cart from './assets/cart.svg'
+import Cart from './assets/cart.svg'
 import './CartWidget.css'
 import { useContext } from 'react';
 import { CartContext } from '../context/CartContext';
@@ -9,7 +9,7 @@ const CartWidget = () => {
 
     return (
         <Link to='/cart' className='carrito' style={{ display: totalQuantity > 0 ? 'block' : 'none' }}>
-            <img className='carrito-img' src={Carrito} alt="carrito-widget" />
+            <img className='cart-img' src={Cart} alt="cart-widget" />
             {totalQuantity}
         </Link>
     )
