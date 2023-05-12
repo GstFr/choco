@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react"
 import ItemDetail from "../ItemDetail/ItemDetail"
 import { useParams } from 'react-router-dom'
-import { collection, getDocs } from 'firebase/firestore'
+import { doc, getDoc } from 'firebase/firestore'
 import { db } from '../../services/firebase/firebaseConfig'
 
 const ItemDetailContainer = () => {
@@ -13,30 +13,23 @@ const ItemDetailContainer = () => {
 
     useEffect(() => {
         setLoading(true)
-
-        const collectionRef = collection(db, 'products')
-
-        getDocs(collectionRef)
-            .then(response => {
-                const productRender = response.docs.map(doc => {
-                    const data = doc.data()
-                    console.log(data.id)
-                    if(data.id == itemId){
-                        setProduct(data)
-                    }
-                })
-                
-                productRender() 
-            })
-            .catch(error => {
-                console.log(error)
-            })
-            .finally(() => {
-                setLoading(false)
-            })
-
-
-    }, [itemId])
+    
+        const getProducto = async () => {
+          const queryRef = doc(db, "products", itemId);
+          const response = await getDoc(queryRef);
+          const newItem = {
+            id: response.id,
+            ...response.data(),
+          };
+          console.log(newItem)
+          setTimeout(()=>{
+            setProduct(newItem);
+            setLoading(false)
+          }, 2000)
+        };
+        getProducto();
+    
+      }, [itemId]);
 
     console.log(product)
 
@@ -49,3 +42,6 @@ const ItemDetailContainer = () => {
 }
 
 export default ItemDetailContainer
+
+
+

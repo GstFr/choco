@@ -1,5 +1,7 @@
 .cart{
     display: flex;
-    width: 50px;
+    width: 70px;
     height: auto;
+    display: grid;
+    margin: 15px;
 }
