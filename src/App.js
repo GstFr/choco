@@ -13,6 +13,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+      <CartProvider>
         <NavBar />
         <div className="container-fluid containerCard">
           <div className='row'>
@@ -30,6 +31,7 @@ function App() {
 
           </div>
         </div>
+        </CartProvider>
       </BrowserRouter>
     </div>
   );
